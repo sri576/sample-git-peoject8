@@ -5,7 +5,7 @@
     <groupId>com.bank</groupId>
     <artifactId>bank</artifactId>
     <version>1</version>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
 
     <name>React.js Blank Project (from https://github.com/making/maven-reactjs-blank)</name>
 
@@ -25,6 +25,14 @@
             <artifactId>org-openide-util</artifactId>
             <version>RELEASE140</version>
         </dependency>
+        <dependency>
+            <groupId>com.adobe.aem</groupId>
+            <artifactId>uber-jar</artifactId>
+            <version>6.4.0</version>
+            <type>pom</type>
+            <scope>provided</scope>
+        </dependency>
+
         <dependency>
             <groupId>org.netbeans.api</groupId>
             <artifactId>org-openide-util</artifactId>
