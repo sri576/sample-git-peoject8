@@ -35,6 +35,14 @@
     			<artifactId>webxml</artifactId>
     			<version>1.4.1</version>
 	    	  </dependency>
+		  <dependency>
+		    <groupId>com.adobe.aem</groupId>
+    			<artifactId>uber-jar</artifactId>
+  			  <version>6.4.0</version>
+    			<type>pom</type>
+   			 <scope>provided</scope>
+		</dependency>
+
 	  </dependencies>
 	
 	  <build>
