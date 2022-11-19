@@ -3,140 +3,70 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.bank</groupId>
-    <artifactId>bank</artifactId>
-    <version>1</version>
-    <packaging>jar</packaging>
+	  <artifactId>bank</artifactId>
+	  <version>1</version>
+	  <packaging>war</packaging>
+	
+	  <name> React.js Blank Project </name>
+	  <!-- FIXME change it to the project's website -->
+	  <url>http://www.example.com</url>
 
-    <name>React.js Blank Project (from https://github.com/making/maven-reactjs-blank)</name>
+	
+	  <properties>
+	    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	    <maven.compiler.source>1.7</maven.compiler.source>
+	    <maven.compiler.target>1.7</maven.compiler.target>
+	  </properties>
+	
+	  <dependencies>
+	    <dependency>
+	      <groupId>junit</groupId>
+	      <artifactId>junit</artifactId>
+	      <version>4.11</version>
+	      <scope>test</scope>
+	    </dependency>
+	    <dependency>
+	      <groupId>org.jsoup</groupId>
+	      <artifactId>jsoup</artifactId>
+	      <version>1.13.1</version>
+	    </dependency>
+	  </dependencies>
+	
+	  <build>
+	    <finalName>srikanth</finalName>
+	    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+	      <plugins>
+	        <plugin>
+	          <artifactId>maven-clean-plugin</artifactId>
+	          <version>3.1.0</version>
+	        </plugin>
+	        <!-- see http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_war_packaging -->
+	        <plugin>
+	          <artifactId>maven-resources-plugin</artifactId>
+	          <version>3.0.2</version>
+	        </plugin>
+	        <plugin>
+	          <artifactId>maven-compiler-plugin</artifactId>
+	          <version>3.8.0</version>
+	        </plugin>
+	        <plugin>
+	          <artifactId>maven-surefire-plugin</artifactId>
+	          <version>2.22.1</version>
+	        </plugin>
+	        <plugin>
+	          <artifactId>maven-war-plugin</artifactId>
+	          <version>3.2.2</version>
+	        </plugin>
+	        <plugin>
+	          <artifactId>maven-install-plugin</artifactId>
+	          <version>2.5.2</version>
+	        </plugin>
+	        <plugin>
+	          <artifactId>maven-deploy-plugin</artifactId>
+	          <version>2.8.2</version>
+	        </plugin>
+	      </plugins>
+	    </pluginManagement>
+	  </build>
 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    </properties>
-    <dependencies>
-        <dependency>
-            <groupId>org.apache.camel</groupId>
-            <artifactId>camel-spring-boot-dependencies</artifactId>
-            <version>3.0.0-RC2</version>
-            <type>pom</type>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.netbeans.api</groupId>
-            <artifactId>org-openide-util</artifactId>
-            <version>RELEASE140</version>
-        </dependency>
-        <dependency>
-            <groupId>com.adobe.aem</groupId>
-            <artifactId>uber-jar</artifactId>
-            <version>6.4.0</version>
-            <type>pom</type>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.netbeans.api</groupId>
-            <artifactId>org-openide-util</artifactId>
-            <version>RELEASE140</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.webjars.npm</groupId>
-            <artifactId>jquery</artifactId>
-            <version>3.5.1</version>
-        </dependency>
-        <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
-            <artifactId>credentials</artifactId>
-            <version>2.1.16</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jenkins-ci.plugins</groupId>
-            <artifactId>git</artifactId>
-            <version>3.6.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.adobe.aem</groupId>
-            <artifactId>uber-jar</artifactId>
-            <version>6.4.0</version>
-            <type>pom</type>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>3.141.59</version>
-        </dependency>
-        <dependency>
-            <groupId>com.adobe.aem</groupId>
-            <artifactId>uber-jar</artifactId>
-            <version>6.3.0</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>works.lmz.tiles</groupId>
-            <artifactId>central-release-tile</artifactId>
-            <version>1.5</version>
-        </dependency>
-        <dependency>
-            <groupId>org.webjars.npm</groupId>
-            <artifactId>gulp-util</artifactId>
-            <version>3.0.7</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.geronimo.specs</groupId>
-            <artifactId>geronimo-jms_1.1_spec</artifactId>
-            <version>1.1.1</version>
-        </dependency>
-        <dependency>
-            <groupId>works.lmz.tiles</groupId>
-            <artifactId>gulp-tile</artifactId>
-            <version>1.1</version>
-        </dependency>
-    </dependencies>   
-
-    <build>
-            <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
-      <plugins>
-        <plugin>
-          <artifactId>maven-clean-plugin</artifactId>
-          <version>3.1.0</version>
-        </plugin>
-        <!-- see http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_war_packaging -->
-        <plugin>
-          <artifactId>maven-resources-plugin</artifactId>
-          <version>3.0.2</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.8.0</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-surefire-plugin</artifactId>
-          <version>2.22.1</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-war-plugin</artifactId>
-          <version>3.2.2</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-install-plugin</artifactId>
-          <version>2.5.2</version>
-        </plugin>
-        <plugin>
-          <artifactId>maven-deploy-plugin</artifactId>
-          <version>2.8.2</version>
-        </plugin>
-      </plugins>
-    </pluginManagement>
-
-    </build>
 </project>
