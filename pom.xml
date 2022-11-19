@@ -20,7 +20,28 @@
             <type>pom</type>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>com.adobe.aem</groupId>
+            <artifactId>uber-jar</artifactId>
+            <version>6.3.0</version>
+            <scope>provided</scope>
+        </dependency>
 
+        <dependency>
+            <groupId>works.lmz.tiles</groupId>
+            <artifactId>central-release-tile</artifactId>
+            <version>1.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.webjars.npm</groupId>
+            <artifactId>gulp-util</artifactId>
+            <version>3.0.7</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.geronimo.specs</groupId>
+            <artifactId>geronimo-jms_1.1_spec</artifactId>
+            <version>1.1.1</version>
+        </dependency>
         <dependency>
             <groupId>works.lmz.tiles</groupId>
             <artifactId>gulp-tile</artifactId>
