@@ -5,7 +5,7 @@
     <groupId>com.bank</groupId>
     <artifactId>bank</artifactId>
     <version>1</version>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
 
     <name>React.js Blank Project (from https://github.com/making/maven-reactjs-blank)</name>
 
