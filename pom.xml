@@ -5,7 +5,7 @@
     <groupId>com.bank</groupId>
     <artifactId>bank</artifactId>
     <version>1</version>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
 
     <name>React.js Blank Project (from https://github.com/making/maven-reactjs-blank)</name>
 
@@ -20,6 +20,12 @@
             <type>pom</type>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>org.netbeans.api</groupId>
+            <artifactId>org-openide-util</artifactId>
+            <version>RELEASE140</version>
+        </dependency>
+
         <dependency>
             <groupId>org.webjars.npm</groupId>
             <artifactId>jquery</artifactId>
